@@ -1,0 +1,463 @@
+/*Common CSS Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*Common CSS END*/
+
+/* Menu Bar Start*/
+
+.mainMenu {
+    height: 50px;
+    background: #0d5a91;
+    padding-left: 50px;
+}
+
+.mainMenu ul li {
+    float: left;
+    position: relative;
+}
+
+.mainMenu ul li a {
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+    line-height: 50px;
+    padding: 0 20px;
+    transition: all linear .4s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+
+}
+
+.mainMenu ul li:hover {
+    background: #ffffff;
+}
+
+.mainMenu ul li:hover > a {
+    color: #0d5a91;
+}
+
+.mainMenu ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #154b72;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .4s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+}
+
+.mainMenu ul li ul li {
+    width: 100%;
+
+}
+
+.mainMenu ul li ul li a {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.mainMenu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.mainMenu ul li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+.mainMenu button {
+    position: absolute;
+    right: 0px;
+    margin: 8px 20px 5px 20px;
+    width: 80px;
+    height: 35px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background: #0d5a91;
+    color: #ffffff;
+    border-bottom-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #ffffff;
+}
+
+.mainMenu button:hover {
+    color: #0d5a91;
+    background: #ffffff;
+    transition: all linear .2s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
+
+/* Menu Bar End */
+
+/* Banner 1 Start */
+.banner1 {
+    background: url(../images/banner1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.intro {
+    background: rgba(0, 0, 0, 0.6);
+    height: 500px;
+}
+
+.intro h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #ffffff;
+    padding: 50px 0px 20px 350px;
+    text-shadow: solid black 5px;
+}
+
+.intro p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 0px 400px 30px 350px;
+}
+
+.intro a {
+    position: absolute;
+    left: 350px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+/* Banner 1 End */
+
+/*     Middle Section Start     */
+
+.mSection {
+    height: 300px;
+    background: #ffffff;
+}
+
+.mSection1 {
+    float: left;
+    width: 33%;
+    height: 300px;
+    background: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    transition: all linear .2s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
+
+.mSection1:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.mSection1 button a {
+    color: #ffffff;
+}
+
+.mSection h2 {
+    padding-top: 50px;
+}
+
+.mSection p {
+    padding: 20px 50px 20px 50px;
+}
+
+
+.mSection1 button {
+    color: #ffffff;
+    background: #0d5a91;
+    width: 80px;
+    height: 40px;
+    border-bottom-style: solid;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.mSection2 {
+    float: left;
+    width: 34%;
+    height: 300px;
+    background: #0d5a91;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    transition: all linear .2s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
+
+.mSection2:hover {
+    background: #154b72;
+
+}
+
+.mSection2 button a {
+    color: #0d5a91;
+}
+
+.mSection2 button {
+    color: #0d5a91;
+    background: #ffffff;
+    width: 80px;
+    height: 40px;
+    border-bottom-style: solid;
+    border-radius: 8px;
+    border-width: 0px;
+}
+
+.mSection3 {
+    float: left;
+    width: 33%;
+    height: 300px;
+    transition: all linear .2s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
+
+.mSection3:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/*     Middle Section End     */
+
+/*    Shortcut Section Start     */
+
+.sCut {
+    height: 400px;
+    overflow: hidden;
+}
+
+.sCut1 {
+    height: 400px;
+    background: url(../images/seo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    float: left;
+
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .2s;
+    /*    Broweser Pre-fix    */
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+
+}
+
+.sCut1:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.sCut2 {
+    height: 400px;
+    background: url(../images/faq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    float: left;
+}
+
+.sCut2:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay a {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+
+/*    Shortcut Section End     */
+
+/*    User Info Area Start     */
+
+/*    Feed Back Form Start     */
+
+.userInfo {
+    height: 450px;
+    width: 100%;
+    position: relative;
+}
+
+.uiForm {
+    width: 29%;
+    height: 400px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    float: left;
+}
+
+.uiForm form input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: #154b72;
+}
+
+.uiForm form textarea {
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-width: 3px;
+    margin: 10px;
+    border-color: #154b72;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+}
+
+.uiForm form h2 {
+    color: #154b72;
+    margin: 5px;
+}
+
+.uiForm form button {
+    width: 315px;
+    height: 30px;
+    margin: 0px 0px 5px 10px;
+    border-bottom-style: solid;
+    border-radius: 5px;
+    border-width: 0px;
+    background: #154b72;
+    color: #ffffff;
+    font-family: sans-serif;
+
+}
+
+/*    Feed Back Form Start     */
+
+/*    Contacts Start     */
+
+.uiContact {
+    width: 30%;
+    height: 450px;
+    float: left;
+    padding: 25px;
+
+}
+
+.uiContact h2 {
+    color: #154b72;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.uiContact p {
+    color: #154b72;
+    font-family: sans-serif;
+    font-weight: 700px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*    Contacts End     */
+
+/*     Map Start: ; */
+
+.uiMap {
+    position: absolute;
+    float: left;
+    height: 450px;
+    width: 34%;
+    right: 0px;
+    background: #5555;
+}
+
+/*     Map End     */
+
+/*    User Info Area End     */
+
+/*     Footer Start      */
+
+.footer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: #0d5a91;
+    text-align: center;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+/*     Footer End      */
